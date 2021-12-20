@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>reloader</title>
+</head>
+<body>
+<div>reloader</div>
+</body>
+<script>
+  // Check that service workers are supported
+  if ('serviceWorker' in navigator) {
+    // hard refresh
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+      for(let registration of registrations) {
+        registration.unregister()
+      } })
+  }
+</script>
+</html>

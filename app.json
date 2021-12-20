@@ -1,0 +1,6 @@
+{
+  "name": "sound9",
+  "description": "Music player with web3 sign-in and mongo storage",
+  "repository": "https://github.com/studiefredfredrik/sound9.git",
+  "keywords": ["node", "express", "vue"]
+}
